@@ -1,35 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!-- BASIC META -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ink & Blink | Where Ideas Spark</title>
 
-<!-- PRIMARY SEO -->
-<title>Ink & Blink | Premium Stationery Store in Bhairahawa, Nepal</title>
-
-<meta name="description" content="Ink & Blink is a premium stationery store in Bhairahawa, Nepal offering notebooks, pens, planners, sketchbooks, study kits and school essentials. Where Ideas Spark.">
-<meta name="keywords" content="stationery store Nepal, Bhairahawa stationery shop, notebooks Nepal, pens, planners, school supplies, Ink and Blink">
-<meta name="author" content="Ink & Blink">
-<meta name="robots" content="index, follow">
-
-<!-- OPEN GRAPH (FACEBOOK) -->
-<meta property="og:title" content="Ink & Blink | Where Ideas Spark">
-<meta property="og:description" content="Premium school stationery and creative tools in Bhairahawa, Nepal.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://yourusername.github.io/InkAndBlink/">
-<meta property="og:image" content="images/notebook.jpg">
-
-<!-- TWITTER -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ink & Blink | Premium Stationery Nepal">
-<meta name="twitter:description" content="Modern, aesthetic school stationery for students.">
-<meta name="twitter:image" content="images/notebook.jpg">
-
-<!-- FAVICON -->
-<link rel="icon" type="image/png" href="images/logo.png"> 
-  
 <style>
 :root{
   --skyblue:#87CEEB;
@@ -42,165 +17,105 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:'Segoe UI',sans-serif;
-  scroll-behavior:smooth;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body{
   background:var(--skyblue);
   color:var(--dark);
-  line-height:1.6;
 }
 
 section{
-  padding:50px 8%;
+  padding:60px 10%;
 }
 
-h1{
-  font-size:40px;
-  margin-bottom:8px;
+h1,h2,h3{
+  margin-bottom:15px;
 }
 
-h2{
-  text-align:center;
-  margin-bottom:25px;
-  font-size:26px;
-}
-
-h3{
-  font-size:16px;
-  margin:8px 0 5px;
-}
-
-/* NAVBAR */
-nav{
-  background:var(--yellow);
-  padding:12px 8%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:sticky;
-  top:0;
-  z-index:1000;
-}
-
-nav a{
-  text-decoration:none;
-  color:#000;
-  font-weight:bold;
-  margin-left:20px;
-}
-
-/* BUTTON */
 .btn{
   background:var(--yellow);
-  padding:10px 22px;
+  padding:12px 25px;
   border:none;
-  border-radius:25px;
-  font-weight:bold;
   text-decoration:none;
   color:#000;
+  font-weight:bold;
+  border-radius:30px;
+  margin:10px 5px 0 0;
   display:inline-block;
-  margin-top:10px;
   transition:0.3s;
 }
 
 .btn:hover{
   opacity:0.8;
-  transform:scale(1.05);
 }
 
-/* HOME */
+/* Home */
 .home{
+  text-align:center;
+  color:#000;
+}
+
+.home h1{
+  font-size:48px;
+}
+
+/* Cards */
+.card{
+  background:var(--white);
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
   text-align:center;
 }
 
-/* CARD */
-.card{
-  background:var(--white);
-  border-radius:18px;
-  padding:20px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.08);
-}
-
-/* PRODUCTS GRID */
 .products{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
   gap:20px;
 }
 
-.product-card{
-  background:#fff;
-  border-radius:18px;
-  padding:15px;
-  text-align:center;
-  box-shadow:0 6px 15px rgba(0,0,0,0.08);
-  transition:0.3s;
-}
-
-.product-card:hover{
-  transform:translateY(-6px);
-}
-
-.product-card img{
+.card img{
   width:100%;
-  height:170px;
+  height:150px;
   object-fit:cover;
-  border-radius:14px;
+  border-radius:10px;
 }
 
-.product-card p{
-  font-weight:bold;
-  color:#555;
-  font-size:14px;
-}
-
-/* FORM */
+/* Contact */
 form input, form textarea{
   width:100%;
-  padding:10px;
-  margin:8px 0;
+  padding:12px;
+  margin:10px 0;
   border-radius:8px;
   border:1px solid #ccc;
 }
 
 iframe{
   width:100%;
-  height:280px;
+  height:300px;
   border-radius:15px;
-  margin-top:10px;
 }
 
 footer{
   background:var(--yellow);
   text-align:center;
-  padding:15px;
+  padding:20px;
   font-weight:bold;
-  font-size:14px;
 }
 </style>
 </head>
-
 <body>
-
-<!-- NAVBAR -->
-<nav>
-<div><strong>Ink & Blink</strong></div>
-<div>
-<a href="#products">Products</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
 
 <!-- HOME -->
 <section class="home">
 <h1>Ink & Blink ✏️</h1>
-<p><strong>Where Ideas Spark ✨</strong></p>
-<p>Premium stationery and school essentials in Bhairahawa, Nepal.</p>
-<a href="#products" class="btn">Shop Now</a>
+<h3>Where Ideas Spark ✨</h3>
+<p>Your one-stop shop for premium school stationery, creative tools, and study essentials.</p>
+<a href="#products" class="btn">🛒 Shop Now</a>
+<a href="#contact" class="btn">📩 Contact Us</a>
 </section>
-<!-- ABOUT -->
+  <!-- ABOUT -->
 <section>
 <h2>About Ink & Blink</h2>
 <div class="card">
@@ -257,3 +172,4 @@ Ink & Blink is a modern stationery store in Bhairahawa, Nepal providing high-qua
 
 </body>
 </html>
+  
